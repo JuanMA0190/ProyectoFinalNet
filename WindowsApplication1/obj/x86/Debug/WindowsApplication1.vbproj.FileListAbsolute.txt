@@ -1,0 +1,168 @@
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmBuscarBase.resources
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Going_Merry19\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmBuscarBase.resources
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Splash.resources
+C:\Users\Going_Merry19\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Reporte.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmBuscarBase.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Reporte.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Splash.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmBuscarBase.resources
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Reporte.resources
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Splash.resources
+D:\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmBuscarBase.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Reporte.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Splash.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmBuscarBase.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Reporte.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Splash.resources
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\bin\Debug\itextsharp.dll
+C:\Users\Going_Merry19\Desktop\TP_Finall-PracticasII_Compra Superior - copia\TP_Finall-PracticasII_Compra Superior\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbprojResolveAssemblyReference.cache
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+D:\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+D:\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+D:\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbprojResolveAssemblyReference.cache
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmBuscarBase.resources
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Reporte.resources
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Splash.resources
+D:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+E:\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+E:\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+E:\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbprojResolveAssemblyReference.cache
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmBuscarBase.resources
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Reporte.resources
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Splash.resources
+E:\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.AssemblyReference.cache
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.SuggestedBindingRedirects.cache
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frmBuscarBase.resources
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Reporte.resources
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Splash.resources
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.cache
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.CoreCompileInputs.cache
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.CopyComplete
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\JMA\Documents\IPESMI 2021\IPESMI 2021\USB\2do año\Nueva carpeta (2)\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.AssemblyReference.cache
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Reporte.resources
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Splash.resources
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.cache
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.CoreCompileInputs.cache
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.CopyComplete
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\MySql.Data.dll
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\System.Memory.dll
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\System.Buffers.dll
+C:\Users\Battosai\Desktop\Compra Superior-final Prog II\WindowsApplication1\bin\Debug\MySql.Data.xml
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\bin\Debug\MySql.Data.dll
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\bin\Debug\System.Memory.dll
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\bin\Debug\System.Buffers.dll
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\bin\Debug\MySql.Data.xml
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.AssemblyReference.cache
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Login.resources
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Principal.resources
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Reporte.resources
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.frm_Splash.resources
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.cache
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.CoreCompileInputs.cache
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.CopyComplete
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Battosai\Desktop\ProyectoFinalNet\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
