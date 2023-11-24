@@ -24,7 +24,6 @@ Partial Class frm_Principal
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_Principal))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.tb_Sexo = New System.Windows.Forms.TextBox()
         Me.datePicker = New System.Windows.Forms.DateTimePicker()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.rb_Fem = New System.Windows.Forms.RadioButton()
@@ -76,7 +75,6 @@ Partial Class frm_Principal
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.tb_Sexo)
         Me.GroupBox1.Controls.Add(Me.datePicker)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.rb_Fem)
@@ -106,14 +104,6 @@ Partial Class frm_Principal
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos"
         '
-        'tb_Sexo
-        '
-        Me.tb_Sexo.Enabled = False
-        Me.tb_Sexo.Location = New System.Drawing.Point(128, 229)
-        Me.tb_Sexo.Name = "tb_Sexo"
-        Me.tb_Sexo.Size = New System.Drawing.Size(101, 25)
-        Me.tb_Sexo.TabIndex = 20
-        '
         'datePicker
         '
         Me.datePicker.Enabled = False
@@ -138,22 +128,20 @@ Partial Class frm_Principal
         'rb_Fem
         '
         Me.rb_Fem.AutoSize = True
-        Me.rb_Fem.Location = New System.Drawing.Point(126, 260)
+        Me.rb_Fem.Location = New System.Drawing.Point(128, 249)
         Me.rb_Fem.Name = "rb_Fem"
         Me.rb_Fem.Size = New System.Drawing.Size(92, 23)
         Me.rb_Fem.TabIndex = 17
-        Me.rb_Fem.TabStop = True
         Me.rb_Fem.Text = "Femenino"
         Me.rb_Fem.UseVisualStyleBackColor = True
         '
         'rb_Masc
         '
         Me.rb_Masc.AutoSize = True
-        Me.rb_Masc.Location = New System.Drawing.Point(11, 260)
+        Me.rb_Masc.Location = New System.Drawing.Point(128, 220)
         Me.rb_Masc.Name = "rb_Masc"
         Me.rb_Masc.Size = New System.Drawing.Size(94, 23)
         Me.rb_Masc.TabIndex = 16
-        Me.rb_Masc.TabStop = True
         Me.rb_Masc.Text = "Masculino"
         Me.rb_Masc.UseVisualStyleBackColor = True
         '
@@ -162,11 +150,11 @@ Partial Class frm_Principal
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Gold
-        Me.Label11.Location = New System.Drawing.Point(6, 226)
+        Me.Label11.Location = New System.Drawing.Point(8, 234)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 22)
+        Me.Label11.Size = New System.Drawing.Size(68, 22)
         Me.Label11.TabIndex = 15
-        Me.Label11.Text = "Sexo"
+        Me.Label11.Text = "Género"
         '
         'tb_estado
         '
@@ -628,7 +616,6 @@ Partial Class frm_Principal
     Friend WithEvents rb_Fem As System.Windows.Forms.RadioButton
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents datePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents tb_Sexo As System.Windows.Forms.TextBox
     Friend WithEvents ColumnHeader5 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader6 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader7 As System.Windows.Forms.ColumnHeader

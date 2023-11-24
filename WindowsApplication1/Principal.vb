@@ -66,7 +66,11 @@ Public Class frm_Principal
                         tb_nom.Text = selectedClientRow("Nomb_Cli").ToString()
                         tb_ape.Text = selectedClientRow("Ape_Cli").ToString()
                         tb_dni.Text = selectedClientRow("Dni_Cli").ToString()
-                        tb_Sexo.Text = selectedClientRow("Sexo_Cli").ToString()
+                        If selectedClientRow("Sexo_Cli").ToString.Equals("Masculino") Then
+                            Me.rb_Masc.Checked = True
+                        ElseIf selectedClientRow("Sexo_Cli").ToString.Equals("Femenino") Then
+                            Me.rb_Fem.Checked = True
+                        End If
                         datePicker.Value = Convert.ToDateTime(selectedClientRow("FechaNac_Cli"))
                         tb_tel.Text = selectedClientRow("Tel_Cli").ToString()
                         tb_direc.Text = selectedClientRow("Direcc_Cli").ToString()
@@ -81,13 +85,7 @@ Public Class frm_Principal
             End Try
         End If
     End Sub
-    Private Sub rb_Fem_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_Fem.CheckedChanged
-        tb_Sexo.Text = "Femenino"
-    End Sub
 
-    Private Sub rb_Masc_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_Masc.CheckedChanged
-        tb_Sexo.Text = "Masculino"
-    End Sub
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Dispose()
         frm_Login.Dispose()
@@ -140,7 +138,8 @@ Public Class frm_Principal
         tb_nom.Clear()
         tb_ape.Clear()
         tb_dni.Clear()
-        tb_Sexo.Clear()
+        rb_Masc.Checked = False
+        rb_Fem.Checked = False
         tb_tel.Clear()
         tb_direc.Clear()
         tb_estado.Clear()
@@ -148,7 +147,7 @@ Public Class frm_Principal
 
 
     Private Sub btt_Agregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btt_Agregar.Click
-        If tb_nom.Text <> "" And tb_ape.Text <> "" And tb_dni.Text <> "" And tb_Sexo.Text <> "" And tb_direc.Text <> "" And tb_tel.Text <> "" Then
+        If tb_nom.Text <> "" And tb_ape.Text <> "" And tb_dni.Text <> "" And tb_direc.Text <> "" And tb_tel.Text <> "" And (rb_Masc.Checked Or rb_Fem.Checked) Then
             If Not registrado(tb_dni.Text) Then
                 Try
                     Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
@@ -171,7 +170,11 @@ Public Class frm_Principal
                         cmd.Parameters.AddWithValue("@Nombre", tb_nom.Text)
                         cmd.Parameters.AddWithValue("@Apellido", tb_ape.Text)
                         cmd.Parameters.AddWithValue("@DNI", tb_dni.Text)
-                        cmd.Parameters.AddWithValue("@Sexo", tb_Sexo.Text)
+                        If Me.rb_Masc.Checked Then
+                            cmd.Parameters.AddWithValue("@Sexo", "Masculino")
+                        ElseIf Me.rb_Fem.Checked Then
+                            cmd.Parameters.AddWithValue("@Sexo", "Femenino")
+                        End If
                         cmd.Parameters.AddWithValue("@FechaNac", fechaNacimiento.ToString("yyyy-MM-dd"))
                         cmd.Parameters.AddWithValue("@Telefono", tb_tel.Text)
                         cmd.Parameters.AddWithValue("@Direccion", tb_direc.Text)
@@ -235,7 +238,7 @@ Public Class frm_Principal
 
     Private Sub btt_Actualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btt_Actualizar.Click
 
-        If tb_nom.Text <> "" And tb_ape.Text <> "" And tb_dni.Text <> "" And tb_Sexo.Text <> "" And tb_direc.Text <> "" And tb_tel.Text <> "" And lstView.SelectedItems.Count > 0 And Not registrado(tb_dni.Text, tb_id.Text) Then
+        If tb_nom.Text <> "" And tb_ape.Text <> "" And tb_dni.Text <> "" And tb_direc.Text <> "" And tb_tel.Text <> "" And lstView.SelectedItems.Count > 0 And Not registrado(tb_dni.Text, tb_id.Text) Then
             Dim selectedClientId As String = lstView.SelectedItems(0).Text
             Try
                 Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
@@ -259,7 +262,11 @@ Public Class frm_Principal
                     command.Parameters.AddWithValue("@Nombre", tb_nom.Text)
                     command.Parameters.AddWithValue("@Apellido", tb_ape.Text)
                     command.Parameters.AddWithValue("@Dni", tb_dni.Text)
-                    command.Parameters.AddWithValue("@Sexo", tb_Sexo.Text)
+                    If Me.rb_Masc.Checked Then
+                        command.Parameters.AddWithValue("@Sexo", "Masculino")
+                    ElseIf Me.rb_Fem.Checked Then
+                        command.Parameters.AddWithValue("@Sexo", "Femenino")
+                    End If
                     command.Parameters.AddWithValue("@FechaNacimiento", fechaNacimiento)
                     command.Parameters.AddWithValue("@Telefono", tb_tel.Text)
                     command.Parameters.AddWithValue("@Direccion", tb_direc.Text)
@@ -281,7 +288,7 @@ Public Class frm_Principal
             Catch ex As Exception
                 MsgBox("Error general: " & ex.Message, vbCritical, "Error")
             End Try
-        ElseIf tb_nom.Text = "" And tb_ape.Text = "" And tb_dni.Text = "" And tb_direc.Text = "" And tb_tel.Text = "" And tb_Sexo.Text = "" Then
+        ElseIf tb_nom.Text = "" And tb_ape.Text = "" And tb_dni.Text = "" And tb_direc.Text = "" And tb_tel.Text = "" Then
             MsgBox("Rellene todos los campos para continuar", vbCritical, "Error")
         End If
     End Sub
