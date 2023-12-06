@@ -1,42 +1,45 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports Microsoft.VisualBasic.ApplicationServices
+Imports MySql.Data.MySqlClient
 Public Class frm_Login
+    Dim con As String
+    Dim connDB As New MySqlConnection(con)
+    Dim cmd As String
+    Dim database As String = "tallerbd"
+    Dim user As String = "root"
+    Dim pass As String = "03020106j"
+    Dim oDataSet As New DataSet
     Private Sub cmdSalir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdSalir.Click
         Me.Dispose()
         frm_Splash.Dispose()
     End Sub
     Private Sub cmdAceptar_Click(ByVal sender As Object, ByVal e As EventArgs) Handles cmdAceptar.Click
-        Dim connDB As New MySqlConnection
-        Dim oDataAdapter As MySqlDataAdapter
-        Dim oDataSet As New DataSet
-        Dim cmd, con As String
 
         If txtUsuario.Text = "" Or txtPass.Text = "" Then
             MsgBox("Hay campos vacíos")
         Else
             Try
-                con = "Server=localhost;Database=tallerbd;Uid=root;Pwd=03020106j;"
-                connDB = New MySqlConnection(con)
-                connDB.Open()
-                cmd = "SELECT * FROM usuarios WHERE Usuario=@usuario and Contrasenia=@contrasenia"
-                Dim command As New MySqlCommand(cmd, connDB)
-                command.Parameters.AddWithValue("@usuario", txtUsuario.Text)
-                command.Parameters.AddWithValue("@contrasenia", txtPass.Text)
-                oDataAdapter = New MySqlDataAdapter(command)
-                oDataSet.Clear()
-                oDataAdapter.Fill(oDataSet, "Usuario")
-                If (oDataSet.Tables("Usuario").Rows.Count() <> 0) Then
-                    frm_Principal.Show()
-                    Me.Close()
-                Else
-                    MessageBox.Show("Usuario y/o contraseña incorrectas", "Sistema")
-                    txtUsuario.Text = ""
-                    txtPass.Text = ""
-                    txtUsuario.Focus()
-                End If
+                Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
+                    connDB.Open()
+                    cmd = "SELECT * FROM usuarios WHERE Usuario=@usuario and Contrasenia=@contrasenia"
+                    Dim command As New MySqlCommand(cmd, connDB)
+                    command.Parameters.AddWithValue("@usuario", txtUsuario.Text)
+                    command.Parameters.AddWithValue("@contrasenia", txtPass.Text)
+                    Dim oDataAdapter As New MySqlDataAdapter(command)
+                    oDataSet.Clear()
+                    oDataAdapter.Fill(oDataSet, "Usuario")
+                    If (oDataSet.Tables("Usuario").Rows.Count() <> 0) Then
+                        frm_Principal.Show()
+                        Me.Close()
+                    Else
+                        MessageBox.Show("Usuario y/o contraseña incorrectas", "Sistema")
+                        txtUsuario.Text = ""
+                        txtPass.Text = ""
+                        txtUsuario.Focus()
+                    End If
+                End Using
+
             Catch ea As Exception
                 MessageBox.Show("Error: " & ea.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Finally
-                connDB.Close()
             End Try
         End If
     End Sub

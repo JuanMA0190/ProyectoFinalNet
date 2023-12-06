@@ -29,8 +29,8 @@ Partial Class frm_Login
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmdSalir = New System.Windows.Forms.Button()
         Me.cmdAceptar = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.bttshow_pass = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -54,7 +54,7 @@ Partial Class frm_Login
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Yellow
-        Me.Label2.Location = New System.Drawing.Point(239, 306)
+        Me.Label2.Location = New System.Drawing.Point(234, 308)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(84, 19)
         Me.Label2.TabIndex = 27
@@ -65,7 +65,7 @@ Partial Class frm_Login
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Yellow
-        Me.Label1.Location = New System.Drawing.Point(249, 237)
+        Me.Label1.Location = New System.Drawing.Point(239, 236)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(60, 19)
         Me.Label1.TabIndex = 26
@@ -75,7 +75,7 @@ Partial Class frm_Login
         '
         Me.cmdSalir.BackColor = System.Drawing.Color.Black
         Me.cmdSalir.ForeColor = System.Drawing.Color.White
-        Me.cmdSalir.Location = New System.Drawing.Point(253, 441)
+        Me.cmdSalir.Location = New System.Drawing.Point(243, 425)
         Me.cmdSalir.Name = "cmdSalir"
         Me.cmdSalir.Size = New System.Drawing.Size(75, 23)
         Me.cmdSalir.TabIndex = 25
@@ -86,22 +86,12 @@ Partial Class frm_Login
         '
         Me.cmdAceptar.BackColor = System.Drawing.Color.Black
         Me.cmdAceptar.ForeColor = System.Drawing.Color.White
-        Me.cmdAceptar.Location = New System.Drawing.Point(253, 412)
+        Me.cmdAceptar.Location = New System.Drawing.Point(243, 396)
         Me.cmdAceptar.Name = "cmdAceptar"
         Me.cmdAceptar.Size = New System.Drawing.Size(75, 23)
         Me.cmdAceptar.TabIndex = 24
         Me.cmdAceptar.Text = "Aceptar"
         Me.cmdAceptar.UseVisualStyleBackColor = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(55, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(417, 220)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 31
-        Me.PictureBox1.TabStop = False
         '
         'bttshow_pass
         '
@@ -115,6 +105,16 @@ Partial Class frm_Login
         Me.bttshow_pass.Text = "‏‏‎‎ ‍‍‍‍‍‎ "
         Me.bttshow_pass.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.bttshow_pass.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.logoRoyalP
+        Me.PictureBox1.Location = New System.Drawing.Point(158, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(248, 222)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 31
+        Me.PictureBox1.TabStop = False
         '
         'frm_Login
         '
@@ -140,7 +140,6 @@ Partial Class frm_Login
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents bttshow_pass As System.Windows.Forms.Button
     Friend WithEvents txtPass As System.Windows.Forms.TextBox
     Friend WithEvents txtUsuario As System.Windows.Forms.TextBox
@@ -148,4 +147,5 @@ Partial Class frm_Login
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents cmdSalir As System.Windows.Forms.Button
     Friend WithEvents cmdAceptar As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

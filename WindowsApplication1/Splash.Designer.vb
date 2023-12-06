@@ -50,33 +50,33 @@ Partial Class frm_Splash
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Rockwell", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Yellow
-        Me.Label2.Location = New System.Drawing.Point(327, 375)
+        Me.Label2.Location = New System.Drawing.Point(278, 378)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(36, 18)
+        Me.Label2.Size = New System.Drawing.Size(39, 16)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "2021"
+        Me.Label2.Text = "2023"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Rockwell", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Yellow
-        Me.Label1.Location = New System.Drawing.Point(234, 350)
+        Me.Label1.Location = New System.Drawing.Point(187, 350)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(235, 18)
+        Me.Label1.Size = New System.Drawing.Size(231, 16)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Desarrollado por: Juan Manuel Acosta"
+        Me.Label1.Text = "Desarrollado por: Valeria Brecki"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(28, 46)
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.logoRoyalP
+        Me.PictureBox1.Location = New System.Drawing.Point(134, 25)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(578, 301)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.Size = New System.Drawing.Size(352, 289)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
         'frm_Splash
@@ -85,9 +85,9 @@ Partial Class frm_Splash
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.OliveDrab
         Me.ClientSize = New System.Drawing.Size(644, 428)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frm_Splash"
@@ -103,5 +103,5 @@ Partial Class frm_Splash
     Friend WithEvents Timer_Muestra As System.Windows.Forms.Timer
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

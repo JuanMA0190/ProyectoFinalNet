@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.ComponentModel.Design
+Imports MySql.Data.MySqlClient
 Public Class frm_Principal
     Dim con As String
     Dim connDB As New MySqlConnection(con)
@@ -50,7 +51,7 @@ Public Class frm_Principal
             Try
                 Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
                     connDB.Open()
-                    Dim cmd As String = "SELECT * FROM Clientes WHERE id_Clientes = @clientId"
+                    cmd = "SELECT * FROM Clientes WHERE id_Clientes = @clientId"
                     Dim command As New MySqlCommand(cmd, connDB)
                     command.Parameters.AddWithValue("@clientId", selectedClientId)
 
@@ -75,7 +76,6 @@ Public Class frm_Principal
                         tb_tel.Text = selectedClientRow("Tel_Cli").ToString()
                         tb_direc.Text = selectedClientRow("Direcc_Cli").ToString()
                         tb_estado.Text = selectedClientRow("Estado_Cli").ToString()
-                        ' Otros campos según sea necesario
                     End If
                 End Using
             Catch ex As MySqlException
@@ -166,23 +166,24 @@ Public Class frm_Principal
                         End If
 
                         ' Crear el comando SQL con parámetros
-                        Dim cmd As New MySqlCommand("INSERT INTO Clientes (Nomb_Cli, Ape_Cli, Dni_Cli, Sexo_Cli, FechaNac_Cli, Tel_Cli, Direcc_Cli, Estado_Cli, FechaReg_Cli, HoraReg_Cli) VALUES (@Nombre, @Apellido, @DNI, @Sexo, @FechaNac, @Telefono, @Direccion, 'Activo', @FechaReg, @HoraReg)", connDB)
-                        cmd.Parameters.AddWithValue("@Nombre", tb_nom.Text)
-                        cmd.Parameters.AddWithValue("@Apellido", tb_ape.Text)
-                        cmd.Parameters.AddWithValue("@DNI", tb_dni.Text)
+                        cmd = "INSERT INTO Clientes (Nomb_Cli, Ape_Cli, Dni_Cli, Sexo_Cli, FechaNac_Cli, Tel_Cli, Direcc_Cli, Estado_Cli, FechaReg_Cli, HoraReg_Cli) VALUES (@Nombre, @Apellido, @DNI, @Sexo, @FechaNac, @Telefono, @Direccion, 'Activo', @FechaReg, @HoraReg)"
+                        Dim command As New MySqlCommand(cmd, connDB)
+                        command.Parameters.AddWithValue("@Nombre", tb_nom.Text)
+                        command.Parameters.AddWithValue("@Apellido", tb_ape.Text)
+                        command.Parameters.AddWithValue("@DNI", tb_dni.Text)
                         If Me.rb_Masc.Checked Then
-                            cmd.Parameters.AddWithValue("@Sexo", "Masculino")
+                            command.Parameters.AddWithValue("@Sexo", "Masculino")
                         ElseIf Me.rb_Fem.Checked Then
-                            cmd.Parameters.AddWithValue("@Sexo", "Femenino")
+                            command.Parameters.AddWithValue("@Sexo", "Femenino")
                         End If
-                        cmd.Parameters.AddWithValue("@FechaNac", fechaNacimiento.ToString("yyyy-MM-dd"))
-                        cmd.Parameters.AddWithValue("@Telefono", tb_tel.Text)
-                        cmd.Parameters.AddWithValue("@Direccion", tb_direc.Text)
-                        cmd.Parameters.AddWithValue("@FechaReg", Date.Now.ToString("yyyy-MM-dd"))
-                        cmd.Parameters.AddWithValue("@HoraReg", Date.Now.ToString("HH:mm:ss"))
+                        command.Parameters.AddWithValue("@FechaNac", fechaNacimiento.ToString("yyyy-MM-dd"))
+                        command.Parameters.AddWithValue("@Telefono", tb_tel.Text)
+                        command.Parameters.AddWithValue("@Direccion", tb_direc.Text)
+                        command.Parameters.AddWithValue("@FechaReg", Date.Now.ToString("yyyy-MM-dd"))
+                        command.Parameters.AddWithValue("@HoraReg", Date.Now.ToString("HH:mm:ss"))
 
                         ' Ejecutar el comando
-                        cmd.ExecuteNonQuery()
+                        command.ExecuteNonQuery()
                         connDB.Close()
 
                         MsgBox("El cliente se registró correctamente.", vbInformation)
@@ -213,7 +214,7 @@ Public Class frm_Principal
             Try
                 Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
                     connDB.Open()
-                    Dim cmd As String = "DELETE FROM Clientes WHERE id_Clientes = @clientId"
+                    cmd = "DELETE FROM Clientes WHERE id_Clientes = @clientId"
                     Dim command As New MySqlCommand(cmd, connDB)
                     command.Parameters.AddWithValue("@clientId", selectedClientId)
                     command.ExecuteNonQuery()
@@ -237,58 +238,61 @@ Public Class frm_Principal
     End Sub
 
     Private Sub btt_Actualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btt_Actualizar.Click
+        If tb_nom.Text <> "" And tb_ape.Text <> "" And tb_dni.Text <> "" And tb_direc.Text <> "" And tb_tel.Text <> "" And lstView.SelectedItems.Count > 0 Then
+            If Not registrado(Integer.Parse(tb_dni.Text), Integer.Parse(tb_id.Text) Or tb_dni.Text <> "") Then
+                Dim selectedClientId As String = lstView.SelectedItems(0).Text
+                Try
+                    Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
+                        connDB.Open()
 
-        If tb_nom.Text <> "" And tb_ape.Text <> "" And tb_dni.Text <> "" And tb_direc.Text <> "" And tb_tel.Text <> "" And lstView.SelectedItems.Count > 0 And Not registrado(tb_dni.Text, tb_id.Text) Then
-            Dim selectedClientId As String = lstView.SelectedItems(0).Text
-            Try
-                Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
-                    connDB.Open()
+                        ' Verificación de la edad
+                        Dim fechaNacimiento As DateTime = datePicker.Value
+                        Dim edad As Integer = DateTime.Now.Year - fechaNacimiento.Year
+                        If DateTime.Now < fechaNacimiento.AddYears(edad) Then
+                            edad -= 1
+                        End If
 
-                    ' Verificación de la edad
-                    Dim fechaNacimiento As DateTime = datePicker.Value
-                    Dim edad As Integer = DateTime.Now.Year - fechaNacimiento.Year
-                    If DateTime.Now < fechaNacimiento.AddYears(edad) Then
-                        edad -= 1
-                    End If
+                        If edad < 18 Then
+                            MsgBox("El cliente debe ser mayor de 18 años.", vbCritical, "Error")
+                            Return
+                        End If
 
-                    If edad < 18 Then
-                        MsgBox("El cliente debe ser mayor de 18 años.", vbCritical, "Error")
-                        Return
-                    End If
-
-                    ' Actualización de la base de datos
-                    Dim cmd As String = "UPDATE Clientes SET Nomb_Cli=@Nombre, Ape_Cli=@Apellido, Dni_Cli=@Dni, Sexo_Cli=@Sexo, FechaNac_Cli=@FechaNacimiento, Tel_Cli=@Telefono, Direcc_Cli=@Direccion WHERE Id_Clientes=@ClienteId"
-                    Dim command As New MySqlCommand(cmd, connDB)
-                    command.Parameters.AddWithValue("@Nombre", tb_nom.Text)
-                    command.Parameters.AddWithValue("@Apellido", tb_ape.Text)
-                    command.Parameters.AddWithValue("@Dni", tb_dni.Text)
-                    If Me.rb_Masc.Checked Then
-                        command.Parameters.AddWithValue("@Sexo", "Masculino")
-                    ElseIf Me.rb_Fem.Checked Then
-                        command.Parameters.AddWithValue("@Sexo", "Femenino")
-                    End If
-                    command.Parameters.AddWithValue("@FechaNacimiento", fechaNacimiento)
-                    command.Parameters.AddWithValue("@Telefono", tb_tel.Text)
-                    command.Parameters.AddWithValue("@Direccion", tb_direc.Text)
+                        ' Actualización de la base de datos
+                        cmd = "UPDATE Clientes SET Nomb_Cli=@Nombre, Ape_Cli=@Apellido, Dni_Cli=@Dni, Sexo_Cli=@Sexo, FechaNac_Cli=@FechaNacimiento, Tel_Cli=@Telefono, Direcc_Cli=@Direccion WHERE Id_Clientes=@ClienteId"
+                        Dim command As New MySqlCommand(cmd, connDB)
+                        command.Parameters.AddWithValue("@Nombre", tb_nom.Text)
+                        command.Parameters.AddWithValue("@Apellido", tb_ape.Text)
+                        command.Parameters.AddWithValue("@Dni", tb_dni.Text)
+                        If Me.rb_Masc.Checked Then
+                            command.Parameters.AddWithValue("@Sexo", "Masculino")
+                        ElseIf Me.rb_Fem.Checked Then
+                            command.Parameters.AddWithValue("@Sexo", "Femenino")
+                        End If
+                        command.Parameters.AddWithValue("@FechaNacimiento", fechaNacimiento)
+                        command.Parameters.AddWithValue("@Telefono", tb_tel.Text)
+                        command.Parameters.AddWithValue("@Direccion", tb_direc.Text)
 
 
-                    command.Parameters.AddWithValue("@ClienteId", selectedClientId)
+                        command.Parameters.AddWithValue("@ClienteId", selectedClientId)
 
-                    command.ExecuteNonQuery()
-                    connDB.Close()
+                        command.ExecuteNonQuery()
+                        connDB.Close()
 
-                    MsgBox("Los datos del cliente se actualizaron correctamente.", vbInformation)
-                    lstView.Items.Clear()
-                    Call Form3_Load(sender, e)
-                    btt_Nuevo_Click(sender, e)
-                End Using
+                        MsgBox("Los datos del cliente se actualizaron correctamente.", vbInformation)
+                        lstView.Items.Clear()
+                        Call Form3_Load(sender, e)
+                        btt_Nuevo_Click(sender, e)
+                    End Using
 
-            Catch ex As MySqlException
-                MsgBox("Error en la base de datos: " & ex.Message, vbCritical, "Error")
-            Catch ex As Exception
-                MsgBox("Error general: " & ex.Message, vbCritical, "Error")
-            End Try
-        ElseIf tb_nom.Text = "" And tb_ape.Text = "" And tb_dni.Text = "" And tb_direc.Text = "" And tb_tel.Text = "" Then
+                Catch ex As MySqlException
+                    MsgBox("Error en la base de datos: " & ex.Message, vbCritical, "Error")
+                Catch ex As Exception
+                    MsgBox("Error general: " & ex.Message, vbCritical, "Error")
+                End Try
+            Else
+                MsgBox("Se intento actualizar el DNI con un valor ya registrado", vbCritical, "Error")
+            End If
+        Else
             MsgBox("Rellene todos los campos para continuar", vbCritical, "Error")
         End If
     End Sub
@@ -301,7 +305,7 @@ Public Class frm_Principal
                     Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
                         connDB.Open()
 
-                        Dim cmd As String = "UPDATE Clientes SET Estado_Cli='Activo' WHERE Id_Clientes=@ClienteId"
+                        cmd = "UPDATE Clientes SET Estado_Cli='Activo' WHERE Id_Clientes=@ClienteId"
                         Dim command As New MySqlCommand(cmd, connDB)
                         command.Parameters.AddWithValue("@ClienteId", selectedClientId)
 
@@ -335,7 +339,7 @@ Public Class frm_Principal
                     Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
                         connDB.Open()
 
-                        Dim cmd As String = "UPDATE Clientes SET Estado_Cli='Inactivo' WHERE Id_Clientes=@ClienteId"
+                        cmd = "UPDATE Clientes SET Estado_Cli='Inactivo' WHERE Id_Clientes=@ClienteId"
                         Dim command As New MySqlCommand(cmd, connDB)
                         command.Parameters.AddWithValue("@ClienteId", selectedClientId)
 
@@ -373,7 +377,7 @@ Public Class frm_Principal
                 connDB.Open()
 
                 ' Construir la consulta SQL básica
-                Dim cmd As String = "SELECT * FROM Clientes WHERE Dni_Cli = @clientDni"
+                cmd = "SELECT * FROM Clientes WHERE Dni_Cli = @clientDni"
 
                 ' Agregar condición adicional para excluir el cliente actualmente seleccionado (si se proporciona)
                 If clienteId <> -1 Then

@@ -1,7 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
 
-
-
 Public Class frm_Reporte
     Dim con As String
     Dim connDB As New MySqlConnection(con)
@@ -64,10 +62,10 @@ Public Class frm_Reporte
             If i = 0 Then
                 m = 140
                 Dim prFon = New Font("Arial", 25, FontStyle.Underline)
-                e.Graphics.DrawString("Compra Superior S.R.L", prFon, Brushes.YellowGreen,
-               250, 30)
+                e.Graphics.DrawString("Royal Prestige", prFon, Brushes.Blue,
+               310, 30)
                 Dim prFonttt = New Font("Arial", 13, FontStyle.Underline)
-                e.Graphics.DrawString("Lista de Clientes", prFonttt, Brushes.OliveDrab,
+                e.Graphics.DrawString("Lista de Clientes", prFonttt, Brushes.Blue,
                360, 80)
                 Dim prFont = New Font("Arial", 10, FontStyle.Bold)
                 e.Graphics.DrawString("Nombre", prFont, Brushes.Black, 10, 110)

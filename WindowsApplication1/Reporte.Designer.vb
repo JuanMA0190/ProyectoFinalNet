@@ -42,6 +42,9 @@ Partial Class frm_Reporte
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'PrintDocument1
+        '
+        '
         'cmdPrint
         '
         Me.cmdPrint.BackColor = System.Drawing.Color.OliveDrab
@@ -144,10 +147,10 @@ Partial Class frm_Reporte
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.logoRoyalP
         Me.PictureBox1.Location = New System.Drawing.Point(23, 424)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(276, 159)
+        Me.PictureBox1.Size = New System.Drawing.Size(179, 152)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False

@@ -58,7 +58,6 @@ Partial Class frm_Principal
         Me.ColumnHeader16 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.lblHor = New System.Windows.Forms.Label()
         Me.lblFech = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -119,7 +118,7 @@ Partial Class frm_Principal
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Gold
-        Me.Label12.Location = New System.Drawing.Point(7, 189)
+        Me.Label12.Location = New System.Drawing.Point(6, 192)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(96, 22)
         Me.Label12.TabIndex = 18
@@ -231,7 +230,7 @@ Partial Class frm_Principal
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Gold
-        Me.Label7.Location = New System.Drawing.Point(7, 381)
+        Me.Label7.Location = New System.Drawing.Point(7, 378)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(65, 22)
         Me.Label7.TabIndex = 6
@@ -242,7 +241,7 @@ Partial Class frm_Principal
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Gold
-        Me.Label6.Location = New System.Drawing.Point(7, 336)
+        Me.Label6.Location = New System.Drawing.Point(6, 339)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(86, 22)
         Me.Label6.TabIndex = 5
@@ -264,7 +263,7 @@ Partial Class frm_Principal
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Gold
-        Me.Label4.Location = New System.Drawing.Point(8, 152)
+        Me.Label4.Location = New System.Drawing.Point(6, 155)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(42, 22)
         Me.Label4.TabIndex = 3
@@ -275,7 +274,7 @@ Partial Class frm_Principal
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Gold
-        Me.Label3.Location = New System.Drawing.Point(10, 110)
+        Me.Label3.Location = New System.Drawing.Point(7, 113)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(79, 22)
         Me.Label3.TabIndex = 2
@@ -286,7 +285,7 @@ Partial Class frm_Principal
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Gold
-        Me.Label2.Location = New System.Drawing.Point(12, 71)
+        Me.Label2.Location = New System.Drawing.Point(6, 71)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(78, 22)
         Me.Label2.TabIndex = 1
@@ -297,7 +296,7 @@ Partial Class frm_Principal
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Gold
-        Me.Label1.Location = New System.Drawing.Point(22, 29)
+        Me.Label1.Location = New System.Drawing.Point(6, 32)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(28, 22)
         Me.Label1.TabIndex = 0
@@ -381,33 +380,22 @@ Partial Class frm_Principal
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Gold
-        Me.Label8.Location = New System.Drawing.Point(526, 42)
+        Me.Label8.Location = New System.Drawing.Point(548, 63)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(188, 42)
+        Me.Label8.Size = New System.Drawing.Size(150, 42)
         Me.Label8.TabIndex = 11
-        Me.Label8.Text = "COMPRA"
+        Me.Label8.Text = "ROYAL"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Gold
-        Me.Label9.Location = New System.Drawing.Point(512, 85)
+        Me.Label9.Location = New System.Drawing.Point(512, 105)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(220, 42)
+        Me.Label9.Size = New System.Drawing.Size(214, 42)
         Me.Label9.TabIndex = 12
-        Me.Label9.Text = "SUPERIOR"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.Gold
-        Me.Label10.Location = New System.Drawing.Point(591, 128)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(64, 31)
-        Me.Label10.TabIndex = 13
-        Me.Label10.Text = "s.r.l"
+        Me.Label9.Text = "PRESTIGE"
         '
         'lblHor
         '
@@ -429,10 +417,10 @@ Partial Class frm_Principal
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 1)
+        Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.logoRoyalP
+        Me.PictureBox1.Location = New System.Drawing.Point(23, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(304, 184)
+        Me.PictureBox1.Size = New System.Drawing.Size(220, 173)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
@@ -551,7 +539,6 @@ Partial Class frm_Principal
         Me.ClientSize = New System.Drawing.Size(917, 699)
         Me.Controls.Add(Me.lblFech)
         Me.Controls.Add(Me.lblHor)
-        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.PictureBox1)
@@ -607,7 +594,6 @@ Partial Class frm_Principal
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents ColumnHeader8 As System.Windows.Forms.ColumnHeader
     Friend WithEvents lblHor As System.Windows.Forms.Label
