@@ -98,7 +98,7 @@ Partial Class frm_Principal
         Me.GroupBox1.ForeColor = System.Drawing.Color.Gold
         Me.GroupBox1.Location = New System.Drawing.Point(12, 191)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(242, 496)
+        Me.GroupBox1.Size = New System.Drawing.Size(242, 504)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos"
@@ -177,7 +177,7 @@ Partial Class frm_Principal
         Me.btt_Nuevo.ForeColor = System.Drawing.Color.Gold
         Me.btt_Nuevo.Image = CType(resources.GetObject("btt_Nuevo.Image"), System.Drawing.Image)
         Me.btt_Nuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btt_Nuevo.Location = New System.Drawing.Point(68, 409)
+        Me.btt_Nuevo.Location = New System.Drawing.Point(10, 413)
         Me.btt_Nuevo.Name = "btt_Nuevo"
         Me.btt_Nuevo.Size = New System.Drawing.Size(85, 85)
         Me.btt_Nuevo.TabIndex = 4
@@ -309,7 +309,7 @@ Partial Class frm_Principal
         Me.lstView.HideSelection = False
         Me.lstView.Location = New System.Drawing.Point(260, 191)
         Me.lstView.Name = "lstView"
-        Me.lstView.Size = New System.Drawing.Size(653, 351)
+        Me.lstView.Size = New System.Drawing.Size(653, 382)
         Me.lstView.TabIndex = 1
         Me.lstView.Tag = ""
         Me.lstView.UseCompatibleStateImageBehavior = False
@@ -380,7 +380,7 @@ Partial Class frm_Principal
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Gold
-        Me.Label8.Location = New System.Drawing.Point(548, 63)
+        Me.Label8.Location = New System.Drawing.Point(65, 48)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(150, 42)
         Me.Label8.TabIndex = 11
@@ -391,7 +391,7 @@ Partial Class frm_Principal
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Gold
-        Me.Label9.Location = New System.Drawing.Point(512, 105)
+        Me.Label9.Location = New System.Drawing.Point(29, 90)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(214, 42)
         Me.Label9.TabIndex = 12
@@ -418,7 +418,7 @@ Partial Class frm_Principal
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.WindowsApplication1.My.Resources.Resources.logoRoyalP
-        Me.PictureBox1.Location = New System.Drawing.Point(23, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(491, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(220, 173)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -435,9 +435,9 @@ Partial Class frm_Principal
         Me.btt_Agregar.ForeColor = System.Drawing.Color.Gold
         Me.btt_Agregar.Image = CType(resources.GetObject("btt_Agregar.Image"), System.Drawing.Image)
         Me.btt_Agregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btt_Agregar.Location = New System.Drawing.Point(382, 574)
+        Me.btt_Agregar.Location = New System.Drawing.Point(919, 191)
         Me.btt_Agregar.Name = "btt_Agregar"
-        Me.btt_Agregar.Size = New System.Drawing.Size(83, 72)
+        Me.btt_Agregar.Size = New System.Drawing.Size(97, 72)
         Me.btt_Agregar.TabIndex = 14
         Me.btt_Agregar.Text = "Agregar"
         Me.btt_Agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -450,7 +450,7 @@ Partial Class frm_Principal
         Me.btt_reporte.ForeColor = System.Drawing.Color.Gold
         Me.btt_reporte.Image = CType(resources.GetObject("btt_reporte.Image"), System.Drawing.Image)
         Me.btt_reporte.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btt_reporte.Location = New System.Drawing.Point(747, 574)
+        Me.btt_reporte.Location = New System.Drawing.Point(922, 498)
         Me.btt_reporte.Name = "btt_reporte"
         Me.btt_reporte.Size = New System.Drawing.Size(94, 75)
         Me.btt_reporte.TabIndex = 8
@@ -465,7 +465,7 @@ Partial Class frm_Principal
         Me.btt_Baja.ForeColor = System.Drawing.Color.Gold
         Me.btt_Baja.Image = CType(resources.GetObject("btt_Baja.Image"), System.Drawing.Image)
         Me.btt_Baja.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btt_Baja.Location = New System.Drawing.Point(659, 574)
+        Me.btt_Baja.Location = New System.Drawing.Point(609, 613)
         Me.btt_Baja.Name = "btt_Baja"
         Me.btt_Baja.Size = New System.Drawing.Size(74, 72)
         Me.btt_Baja.TabIndex = 7
@@ -480,7 +480,7 @@ Partial Class frm_Principal
         Me.btt_Alta.ForeColor = System.Drawing.Color.Gold
         Me.btt_Alta.Image = CType(resources.GetObject("btt_Alta.Image"), System.Drawing.Image)
         Me.btt_Alta.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btt_Alta.Location = New System.Drawing.Point(569, 574)
+        Me.btt_Alta.Location = New System.Drawing.Point(473, 613)
         Me.btt_Alta.Name = "btt_Alta"
         Me.btt_Alta.Size = New System.Drawing.Size(75, 72)
         Me.btt_Alta.TabIndex = 6
@@ -496,9 +496,9 @@ Partial Class frm_Principal
         Me.btt_Actualizar.ForeColor = System.Drawing.Color.Gold
         Me.btt_Actualizar.Image = CType(resources.GetObject("btt_Actualizar.Image"), System.Drawing.Image)
         Me.btt_Actualizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btt_Actualizar.Location = New System.Drawing.Point(275, 574)
+        Me.btt_Actualizar.Location = New System.Drawing.Point(922, 269)
         Me.btt_Actualizar.Name = "btt_Actualizar"
-        Me.btt_Actualizar.Size = New System.Drawing.Size(87, 72)
+        Me.btt_Actualizar.Size = New System.Drawing.Size(94, 72)
         Me.btt_Actualizar.TabIndex = 5
         Me.btt_Actualizar.Text = "Actualizar"
         Me.btt_Actualizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -511,9 +511,9 @@ Partial Class frm_Principal
         Me.btt_Eliminar.ForeColor = System.Drawing.Color.Gold
         Me.btt_Eliminar.Image = CType(resources.GetObject("btt_Eliminar.Image"), System.Drawing.Image)
         Me.btt_Eliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btt_Eliminar.Location = New System.Drawing.Point(481, 574)
+        Me.btt_Eliminar.Location = New System.Drawing.Point(922, 378)
         Me.btt_Eliminar.Name = "btt_Eliminar"
-        Me.btt_Eliminar.Size = New System.Drawing.Size(82, 72)
+        Me.btt_Eliminar.Size = New System.Drawing.Size(94, 72)
         Me.btt_Eliminar.TabIndex = 4
         Me.btt_Eliminar.Text = "Eliminar"
         Me.btt_Eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
@@ -525,9 +525,9 @@ Partial Class frm_Principal
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Gold
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(847, 600)
+        Me.Button1.Location = New System.Drawing.Point(922, 600)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(66, 87)
+        Me.Button1.Size = New System.Drawing.Size(94, 87)
         Me.Button1.TabIndex = 3
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -536,7 +536,7 @@ Partial Class frm_Principal
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.OliveDrab
-        Me.ClientSize = New System.Drawing.Size(917, 699)
+        Me.ClientSize = New System.Drawing.Size(1025, 699)
         Me.Controls.Add(Me.lblFech)
         Me.Controls.Add(Me.lblHor)
         Me.Controls.Add(Me.Label9)

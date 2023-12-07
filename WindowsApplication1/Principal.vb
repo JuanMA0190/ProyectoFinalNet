@@ -460,5 +460,6 @@ Public Class frm_Principal
     Private Sub tb_tel_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles tb_tel.KeyPress
         Call SoloNumeros(e)
     End Sub
+
     ''-----------------------------------------------------------------------------------------------------------------------------------
 End Class
