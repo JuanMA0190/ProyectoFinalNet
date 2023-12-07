@@ -1,13 +1,12 @@
 ﻿Imports System.ComponentModel.Design
 Imports MySql.Data.MySqlClient
 Public Class frm_Principal
-    Dim con As String
-    Dim connDB As New MySqlConnection(con)
+    ''Formulario principal que gestiona el CRUD de los clientes
     Dim cmd As String
     Dim database As String = "tallerbd"
     Dim user As String = "root"
     Dim pass As String = "03020106j"
-
+    ''Metodo del evento de cargar formulario para cargar el list view trayendo las tablas de la bd
     Private Sub Form3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
             Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
@@ -44,6 +43,7 @@ Public Class frm_Principal
         End Try
     End Sub
 
+    ''Metodo del evento click listview para traer un cliente y rellenar los campos del formulario
     Private Sub lstview_selectedindexchanged(ByVal sender As Object, ByVal e As EventArgs) Handles lstView.SelectedIndexChanged
         If lstView.SelectedItems.Count > 0 Then
             Dim selectedClientId As String = lstView.SelectedItems(0).Text
@@ -85,18 +85,19 @@ Public Class frm_Principal
             End Try
         End If
     End Sub
-
+    ''Metodo del evento de boton para cerrar este formulario al clickear
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Dispose()
         frm_Login.Dispose()
         frm_Splash.Dispose()
     End Sub
 
-
+    ''Metodo del evento de boton Nuevo que cambia segun su estado
     Private Sub btt_Nuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btt_Nuevo.Click
 
         If btt_Nuevo.Text = "Modificar" Then
             btt_Nuevo.Text = "Cancelar"
+            ''cambia la imagen a "cancelar" si esta en estado "modificar"
             btt_Nuevo.Image = My.Resources.Cancel__1_
             tb_nom.Enabled = True
             tb_ape.Enabled = True
@@ -114,6 +115,7 @@ Public Class frm_Principal
         Else
             If btt_Nuevo.Text = "Cancelar" Then
                 btt_Nuevo.Text = "Modificar"
+                ''cambia la imagen a "modificar" si esta en estado "cancelar"
                 btt_Nuevo.Image = My.Resources._mod
                 tb_nom.Enabled = False
                 tb_ape.Enabled = False
@@ -132,7 +134,7 @@ Public Class frm_Principal
             End If
         End If
     End Sub
-
+    '''Metodo del evento que restablece todos los campos del formulario
     Private Sub borrar()
         tb_id.Clear()
         tb_nom.Clear()
@@ -145,9 +147,11 @@ Public Class frm_Principal
         tb_estado.Clear()
     End Sub
 
-
+    '''Metodo del evento del elemento boton que agrega un nuevo cliente si esta todo correcto
     Private Sub btt_Agregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btt_Agregar.Click
+        ''Verifica si todos los campos estan llenos y por lo menos un genero seleccionado
         If tb_nom.Text <> "" And tb_ape.Text <> "" And tb_dni.Text <> "" And tb_direc.Text <> "" And tb_tel.Text <> "" And (rb_Masc.Checked Or rb_Fem.Checked) Then
+            ''Verifica antes de cargar el usuario si ya no esta registrado por el dni
             If Not registrado(tb_dni.Text) Then
                 Try
                     Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
@@ -188,6 +192,7 @@ Public Class frm_Principal
 
                         MsgBox("El cliente se registró correctamente.", vbInformation)
                         lstView.Items.Clear()
+                        ''Se llama a la carga del formulario para actualizar los datos
                         Call Form3_Load(sender, e)
                         btt_Nuevo_Click(sender, e)
                     End Using
@@ -206,7 +211,7 @@ Public Class frm_Principal
         End If
 
     End Sub
-
+    '''Metodo del evento del elemento boton que elimina un cliente seleccionado
     Private Sub btt_Eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btt_Eliminar.Click
         If lstView.SelectedItems.Count > 0 Then
             Dim selectedClientId As String = lstView.SelectedItems(0).Text
@@ -223,7 +228,9 @@ Public Class frm_Principal
 
                     MsgBox("El cliente ha sido eliminado", vbInformation)
                     lstView.Items.Clear()
+                    ''Se llama a la carga del formulario para actualizar los dat
                     Call Form3_Load(sender, e)
+                    ''se llama al metodo borrar para limpiar los campos
                     Call borrar()
                 End Using
             Catch ex As MySqlException
@@ -236,7 +243,7 @@ Public Class frm_Principal
             MsgBox("Seleccione un cliente en la lista para continuar", vbCritical, "Error")
         End If
     End Sub
-
+    '''Metodo del evento del elemento boton que actualiza los datos de un cliente seleccionado siempre y cuando no se agregue un DNI ya ingresado
     Private Sub btt_Actualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btt_Actualizar.Click
         If tb_nom.Text <> "" And tb_ape.Text <> "" And tb_dni.Text <> "" And tb_direc.Text <> "" And tb_tel.Text <> "" And lstView.SelectedItems.Count > 0 Then
             If Not registrado(Integer.Parse(tb_dni.Text), Integer.Parse(tb_id.Text) Or tb_dni.Text <> "") Then
@@ -296,7 +303,7 @@ Public Class frm_Principal
             MsgBox("Rellene todos los campos para continuar", vbCritical, "Error")
         End If
     End Sub
-
+    '''Metodo del evento del elemento boton que actualiza el estado del cliente con respecto a las cuotas y su continuidad de alta
     Private Sub btt_Alta_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btt_Alta.Click
         If lstView.SelectedItems.Count > 0 Then
             Dim selectedClientId As String = lstView.SelectedItems(0).Text
@@ -330,7 +337,7 @@ Public Class frm_Principal
             MsgBox("Seleccione un cliente en la lista para continuar", vbCritical, "Error")
         End If
     End Sub
-
+    '''Metodo del evento del elemento boton que actualiza el estado del cliente con respecto a las cuotas y su continuidad de baja
     Private Sub btt_Baja_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btt_Baja.Click
         If lstView.SelectedItems.Count > 0 Then
             Dim selectedClientId As String = lstView.SelectedItems(0).Text
@@ -364,12 +371,14 @@ Public Class frm_Principal
             MsgBox("Seleccione un cliente en la lista para continuar", vbCritical, "Error")
         End If
     End Sub
-
+    '''Metodo del evento del elemento boton que esconde este formulario y abre un nuevo formulario, en este caso, Reporte
     Private Sub btt_reporte_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btt_reporte.Click
         frm_Reporte.Show()
         Me.Hide()
     End Sub
-
+    ''Funcio que evalua por dni y opcional por id si el cliente que se ingreso no coincide con uno ya ingresado
+    ''Devuelve un booleano
+    ''Solo se necesita el dni cuando se crea un nuevo cliente y cuando se actualiza se pasa por parametro el dni y el id del cliente
     Function registrado(ByVal dni As Integer, Optional ByVal clienteId As Integer = -1) As Boolean
         Dim flag As Boolean = False
         Try
@@ -408,6 +417,7 @@ Public Class frm_Principal
         End Try
         Return flag
     End Function
+    ''Metodo que valida que en el texfield que se le asigna el evento solo se ingresen numeros
     Sub SoloNumeros(ByRef e As System.Windows.Forms.KeyPressEventArgs)
         If Char.IsDigit(e.KeyChar) Then
             e.Handled = False
@@ -420,6 +430,7 @@ Public Class frm_Principal
             MsgBox("Solo se permiten números en este campo.", vbExclamation, "Ingreso texto")
         End If
     End Sub
+    ''Metodo que valida que en el texfield que se le asigna el evento solo se ingresen letras
     Sub SoloLetras(ByRef e As System.Windows.Forms.KeyPressEventArgs)
         If Char.IsLetter(e.KeyChar) Then
             e.Handled = False
@@ -433,7 +444,7 @@ Public Class frm_Principal
             MsgBox("Solo se permiten letras en este campo.", vbExclamation, "Ingreso números")
         End If
     End Sub
-
+    ''Se asigna los metodos a los correspondientes Text Field -----------------------------------------------------------------------------
     Private Sub tb_nom_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles tb_nom.KeyPress
         Call SoloLetras(e)
     End Sub
@@ -449,4 +460,5 @@ Public Class frm_Principal
     Private Sub tb_tel_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles tb_tel.KeyPress
         Call SoloNumeros(e)
     End Sub
+    ''-----------------------------------------------------------------------------------------------------------------------------------
 End Class

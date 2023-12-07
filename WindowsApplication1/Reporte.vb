@@ -1,13 +1,12 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class frm_Reporte
-    Dim con As String
-    Dim connDB As New MySqlConnection(con)
+    ''formulario que se encarga de imprimir en un archivo pdf los clientes registrados en la bd
     Dim cmd As String
     Dim database As String = "tallerbd"
     Dim user As String = "root"
     Dim pass As String = "03020106j"
-
+    ''Metodo del evento de cargar formulario para cargar el mismo y automaticamente mostrar la tabla con los clientes antes de imprimir en pdf
     Private Sub Form4_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
             Using connDB As New MySqlConnection($"Server=localhost;Database={database};Uid={user};Pwd={pass};")
@@ -44,7 +43,7 @@ Public Class frm_Reporte
         End Try
 
     End Sub
-
+    ''Metodo del evento del elemento boton que al clickear si el list view tiene clientes llama a la funcion para imprimir clientes
     Private Sub cmdPrint_Click(ByVal sender As Object, ByVal e As EventArgs) Handles cmdPrint.Click
         If lstView.Items.Count > 0 Then
             PrintDocument1.Print()
@@ -54,7 +53,7 @@ Public Class frm_Reporte
         End If
     End Sub
 
-
+    ''funcion para imprimir clientes
     Private Sub PrintDocument1_PrintPage(ByVal sender As Object, ByVal e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
         Dim i, m, idcli As Integer
         Dim nomcli, apecli, dnicli, telcli, direcli, estado, sexo, fechaNac, fechaReg, HorReg As String

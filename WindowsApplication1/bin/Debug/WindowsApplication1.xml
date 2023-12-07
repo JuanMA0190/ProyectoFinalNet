@@ -57,5 +57,26 @@ WindowsApplication1
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="M:WindowsApplication1.frm_Principal.borrar">
+Metodo del evento que restablece todos los campos del formulario
+</member>
+<member name="M:WindowsApplication1.frm_Principal.btt_Agregar_Click(System.Object,System.EventArgs)">
+Metodo del evento del elemento boton que agrega un nuevo cliente si esta todo correcto
+</member>
+<member name="M:WindowsApplication1.frm_Principal.btt_Eliminar_Click(System.Object,System.EventArgs)">
+Metodo del evento del elemento boton que elimina un cliente seleccionado
+</member>
+<member name="M:WindowsApplication1.frm_Principal.btt_Actualizar_Click(System.Object,System.EventArgs)">
+Metodo del evento del elemento boton que actualiza los datos de un cliente seleccionado siempre y cuando no se agregue un DNI ya ingresado
+</member>
+<member name="M:WindowsApplication1.frm_Principal.btt_Alta_Click(System.Object,System.EventArgs)">
+Metodo del evento del elemento boton que actualiza el estado del cliente con respecto a las cuotas y su continuidad de alta
+</member>
+<member name="M:WindowsApplication1.frm_Principal.btt_Baja_Click(System.Object,System.EventArgs)">
+Metodo del evento del elemento boton que actualiza el estado del cliente con respecto a las cuotas y su continuidad de baja
+</member>
+<member name="M:WindowsApplication1.frm_Principal.btt_reporte_Click(System.Object,System.EventArgs)">
+Metodo del evento del elemento boton que esconde este formulario y abre un nuevo formulario, en este caso, Reporte
+</member>
 </members>
 </doc>
